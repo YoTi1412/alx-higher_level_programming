@@ -1,8 +1,2 @@
 #!/bin/bash
-pyfile=$PYFILE
-
-if [ -f "$pyfile" ]; then
-python3 "$pyfile"
-else
-    echo "Error: Python file '$pyfile' not found."
-fi
+[ -f "$PYFILE" ] && python3 "$PYFILE"
